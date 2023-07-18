@@ -32,18 +32,16 @@ export default function App() {
 	}
 
 	return (
-		<SafeAreaView
-			style={{
-				flex: 1,
-				marginTop: Platform.OS === 'android' ? StatusBarManager.HEIGHT : 0,
-				backgroundColor: '#F9FAFB',
-			}}
-		>
-		<NavigationContainer>
-			<Navigator />
-		</NavigationContainer>
-		{/* <StatusBar style="auto" /> */}
-		</SafeAreaView>
+		// <SafeAreaView
 
+		// >
+		// <StatusBar style="auto" />
+		// </SafeAreaView>
+		<>
+			<StatusBar style="auto" />
+			<NavigationContainer>
+				<Navigator />
+			</NavigationContainer>
+		</>
 	);
 }

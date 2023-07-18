@@ -20,7 +20,7 @@ const Home = () => {
 	return (
 		<>
 			{/* <Header isOpen={isOpen} setOpen={() => setIsOpen(!isOpen)} /> */}
-			<Sidebar isOpen={isOpen} />
+			{/* <Sidebar isOpen={isOpen} /> */}
 			<MainContent isOpen={isOpen}>
 				<Title>Welcome to Northwind Traders</Title>
 				<SubTitle>Running on Cloudflare's D1</SubTitle>

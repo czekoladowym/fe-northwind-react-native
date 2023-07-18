@@ -39,7 +39,7 @@ const Suppliers = () => {
 	return (
 		<>
 			{/* <Header isOpen={isOpen} setOpen={() => setIsOpen(!isOpen)} /> */}
-			<Sidebar isOpen={isOpen} />
+			{/* <Sidebar isOpen={isOpen} /> */}
 			<MainContent isOpen={isOpen}>
 				<MainCard>
 					<CardHeader>

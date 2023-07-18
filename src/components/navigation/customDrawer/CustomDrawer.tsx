@@ -5,15 +5,19 @@ import {
 import { View, Text, Dimensions } from 'react-native';
 import { HeadTitle, HeadTitleField, SubTitle } from './customDrawerStyles';
 import { MenuLabel } from '@components/sidebar/sidebarStyles';
+import { NativeModules } from 'react-native';
+const { StatusBarManager } = NativeModules;
 
 const CustomDrawer = (props: any) => {
-	const screenHeight = Dimensions.get('window').height;
+	const screenHeight =
+		Dimensions.get('window').height + StatusBarManager.HEIGHT;
 	return (
 		<DrawerContentScrollView
 			{...props}
 			contentContainerStyle={{
 				backgroundColor: 'rgb(31 41 55)',
-				height: screenHeight,				
+				height: '100%',
+				overflow: 'hidden',
 			}}
 		>
 			<HeadTitleField>
